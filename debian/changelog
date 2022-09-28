@@ -1,0 +1,474 @@
+clzip (1.12-3) sid; urgency=medium
+
+  * Uploading to sid.
+  * Updating watch file.
+  * Updating to standards version 4.6.0.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sat, 09 Oct 2021 09:36:59 +0200
+
+clzip (1.12-2) sid; urgency=medium
+
+  * Uploading to sid.
+  * Correcting email address in previous changelog.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Mon, 25 Jan 2021 14:11:09 +0100
+
+clzip (1.12-1) sid; urgency=medium
+
+  * Uploading to sid.
+  * Merging upstream version 1.12.
+  * Refreshing build.patch.
+  * Updating to standards version 4.5.1.
+  * Updating years in copyright file for 2021.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Mon, 25 Jan 2021 13:45:00 +0100
+
+clzip (1.11-9) sid; urgency=medium
+
+  * Uploading to sid.
+  * Including buildtools.mk unconditionally in rules.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Wed, 19 Aug 2020 07:01:07 +0200
+
+clzip (1.11-8) sid; urgency=medium
+
+  * Uploading to sid.
+  * Using execute_after targets in rules to be explicit what we're doing.
+  * Updating to debhelper version 13.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 19 Apr 2020 13:29:45 +0200
+
+clzip (1.11-7) sid; urgency=medium
+
+  * Uploading to sid.
+  * Updating years in copyright file for 2020.
+  * Updating to standards version 4.5.0.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sat, 25 Jan 2020 19:26:24 +0100
+
+clzip (1.11-6) sid; urgency=medium
+
+  * Uploading to sid.
+  * Updating to standards version 4.4.1.
+  * Using codenames as upload targets in changelog.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Mon, 18 Nov 2019 14:25:48 +0100
+
+clzip (1.11-5) sid; urgency=medium
+
+  * Uploading to sid.
+  * Applying patch from Helmut Grohne <helmut@subdivi.de> to fix FTBFS
+    when cross-compiling (Closes: #932662).
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sat, 10 Aug 2019 13:54:51 +0200
+
+clzip (1.11-4) sid; urgency=medium
+
+  * Uploading to sid.
+  * Updating to standards version 4.4.0.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Tue, 16 Jul 2019 18:19:08 +0200
+
+clzip (1.11-3) sid; urgency=medium
+
+  * Uploading to sid.
+  * Improving watch file.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 03 Feb 2019 20:12:53 +0100
+
+clzip (1.11-2) sid; urgency=medium
+
+  * Uploading to sid.
+  * Using build-depends to specify debhelper compatibility.
+  * Repeating Section for binary packages in control.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 20 Jan 2019 19:37:18 +0100
+
+clzip (1.11-1) sid; urgency=medium
+
+  * Uploading to sid.
+  * Merging upstream version 1.11.
+  * Updating year for upstream in copyright for 2019.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Tue, 08 Jan 2019 18:20:51 +0100
+
+clzip (1.10-3) sid; urgency=medium
+
+  * Uploading to sid.
+  * Adding lzip-compressor and lzip-decompressor alternatives.
+  * Updating to standards version 4.3.0.
+  * Updating vcs fields.
+  * Updating year in copyright for 2019.
+  * Updating to debhelper 12.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Thu, 27 Dec 2018 19:25:30 +0100
+
+clzip (1.10-2) sid; urgency=medium
+
+  * Uploading to sid.
+  * Updating years in copyright file.
+  * Updating to standards version 4.2.1.
+  * Harmonizing changelog.
+  * Harmonizing rules file.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 26 Aug 2018 12:04:03 +0200
+
+clzip (1.10-1) sid; urgency=medium
+
+  * Uploading to sid.
+  * Merging upstream version 1.10.
+  * Using https in watch file.
+  * Updating to standards version 4.1.3.
+  * Updating to debhelper compat 11.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Tue, 13 Feb 2018 07:56:41 +0100
+
+clzip (1.9-4) sid; urgency=medium
+
+  * Uploading to sid.
+  * Removing explicit debug package in favour of automated debug packages.
+  * Passing -g to gcc to avoid empty debug files.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 05 Nov 2017 07:55:06 +0100
+
+clzip (1.9-3) sid; urgency=medium
+
+  * Uploading to sid.
+  * Updating to standards version 4.1.1.
+  * Deprecating priority extra as of policy 4.0.1.
+  * Adding Rules-Requires-Root field.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 05 Nov 2017 07:29:47 +0100
+
+clzip (1.9-2) sid; urgency=low
+
+  * Uploading to sid.
+  * Updating to standards version 4.0.0.
+  * Using https for copyright format url.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 18 Jun 2017 21:28:55 +0200
+
+clzip (1.9-1) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Merging upstream version 1.9.
+  * Updating vcs fields.
+  * Removing superfluous --parallel when invoking debhelper as it's the
+    default with compat level 10, thanks to Gianfranco Costamagna
+    <locutusofborg@debian.org>.
+  * Refreshing build.patch.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 07 May 2017 17:56:41 +0200
+
+clzip (1.8-5) sid; urgency=low
+
+  * Uploading to sid.
+  * Updating year in copyright information for 2017.
+  * Moving debian specific patches to subdirectory within patches
+    directory.
+  * Using consistent email address for all downstream work.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Thu, 26 Jan 2017 17:21:42 +0100
+
+clzip (1.8-4) sid; urgency=low
+
+  * Uploading to sid.
+  * Making maintainer scripts executable in source tree.
+  * Updating upstream signing key.
+  * Sorting alternatives handling in rules.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sat, 10 Dec 2016 10:34:07 +0100
+
+clzip (1.8-3) sid; urgency=low
+
+  * Uploading to sid.
+  * Updating debhelper build-depends for version 10.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sat, 15 Oct 2016 07:32:36 +0200
+
+clzip (1.8-2) sid; urgency=low
+
+  * Uploading to sid.
+  * Updating years in copyright file.
+  * Switching to debhelper compat 10.
+  * Adding watch file.
+  * Adding gpg verification to watch file.
+  * Updating vcs fields.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 03 Jul 2016 17:14:50 +0200
+
+clzip (1.8-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Merging upstream version 1.8.
+  * Refreshing build.patch.
+  * Wrap and sorting control file.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Mon, 30 May 2016 06:43:45 +0200
+
+clzip (1.7-2) sid; urgency=medium
+
+  * Uploading to sid.
+  * Updating vcs fields.
+  * Removing manual settings for xz compression.
+  * Updating years in copyright file.
+  * Harmonizing rules file.
+  * Updating to standards version 3.9.8.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Thu, 12 May 2016 16:41:01 +0200
+
+clzip (1.7-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Merging upstream version 1.7.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 19 Jul 2015 19:58:04 +0200
+
+clzip (1.7~rc1-1) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Dropping pre-jessie breaks.
+  * Merging upstream version 1.7~rc1.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Fri, 29 May 2015 07:15:08 +0200
+
+clzip (1.7~pre1-1) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Merging upstream version 1.7~pre1.
+  * Updating years in copyright file.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sat, 14 Mar 2015 18:08:07 +0100
+
+clzip (1.6-2) sid; urgency=low
+
+  * Uploading to sid.
+  * Updating to standards version 3.9.6.
+  * Harmonizing update-alternatives handling across all lzip-alternative
+    providing packages.
+  * Harmonizing update-alternatives priority across all lzip-alternative
+    providing packages.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Thu, 18 Sep 2014 00:14:04 +0200
+
+clzip (1.6-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Merging upstream version 1.6.
+  * Updating copyright file.
+  * Removing date headers in build.patch.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sat, 06 Sep 2014 23:19:32 +0200
+
+clzip (1.6~rc1-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Merging upstream version 1.6~rc1.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sat, 05 Jul 2014 08:45:35 +0200
+
+clzip (1.6~pre2-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Merging upstream version 1.6~pre2.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sat, 10 May 2014 11:49:21 +0200
+
+clzip (1.6~pre1-2) sid; urgency=low
+
+  * Uploading to sid.
+  * Building with dh --parallel.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Mon, 31 Mar 2014 19:41:47 +0200
+
+clzip (1.6~pre1-1) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Updating to standards version 3.9.5.
+  * Merging upstream version 1.6~pre1.
+  * Updating years in copyright for 2014.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sat, 08 Feb 2014 15:34:32 +0100
+
+clzip (1.5-1) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Merging upstream version 1.5.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Tue, 01 Oct 2013 20:42:52 +0200
+
+clzip (1.5~rc1-1) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Updating vcs fields.
+  * Merging upstream version 1.5~rc1.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sat, 17 Aug 2013 17:23:04 +0200
+
+clzip (1.5~pre2-1) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Merging upstream version 1.5~pre2.
+  * Rediffing build.patch.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Fri, 19 Jul 2013 17:25:20 +0200
+
+clzip (1.5~pre1-3) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Adding vcs fields.
+  * Wrapping control fields.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Wed, 17 Jul 2013 12:46:59 +0200
+
+clzip (1.5~pre1-2) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Adding lzip-alternative provides.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Tue, 04 Jun 2013 16:50:44 +0200
+
+clzip (1.5~pre1-1) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Correcting spelling typo in comment in rules.
+  * Merging upstream version 1.5~pre1.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Thu, 16 May 2013 10:06:26 +0200
+
+clzip (1.4-3) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Prefixing patches with four digits.
+  * Trimming diff headers in patches.
+  * Adding alternative handling for /usr/bin/lzip.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Tue, 26 Mar 2013 10:31:22 +0100
+
+clzip (1.4-2) sid; urgency=low
+
+  * Uploading to sid.
+  * Removing all references to my old email address.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 10 Mar 2013 19:56:53 +0100
+
+clzip (1.4-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Merging upstream version 1.4.
+  * Trimming diff headers in patches.
+  * Updating years in copyright file.
+  * Dropping dpkg-source compression levels.
+  * Rediffing build.patch.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 10 Mar 2013 19:51:59 +0100
+
+clzip (1.3-3) sid; urgency=low
+
+  * Uploading to sid.
+  * Updating to standards version 3.9.4.
+  * Adding dpkg-source local options.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 16 Dec 2012 10:36:14 +0100
+
+clzip (1.3-2) sid; urgency=low
+
+  * Uploading to sid.
+  * Updating GPL boilerplate in copyright file.
+  * Switching to xz compression.
+  * Adding patch to avoid overwriting build-environment.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Fri, 29 Jun 2012 04:27:41 +0200
+
+clzip (1.3-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Using compression level 9 also for binary packages.
+  * Merging upstream version 1.3.
+  * Updating to debhelper version 9.
+  * Updating to standards version 3.9.3.
+  * Updating years in copyright.
+  * Updating copyright file machine-readable format version 1.0.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Mon, 16 Apr 2012 08:16:08 +0000
+
+clzip (1.2-2) sid; urgency=low
+
+  * Uploading to sid.
+  * Compacting copyright file.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 10 Jul 2011 17:08:19 +0200
+
+clzip (1.2-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Updating package descriptions.
+  * Updating standards version to 3.9.2.
+  * Merging upstream version 1.2.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Mon, 23 May 2011 15:37:41 +0200
+
+clzip (1.1-2) sid; urgency=low
+
+  * Uploading to sid.
+  * Making reference to licenses in copyright distribution neutral.
+  * Improving previous changelog entries.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sat, 22 Jan 2011 21:30:15 +0100
+
+clzip (1.1-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Merging upstream version 1.1.
+  * Updating years in copyright file.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Fri, 14 Jan 2011 20:22:27 +0100
+
+clzip (1.1~rc2-2) sid; urgency=low
+
+  * Uploading to sid.
+  * Updating maintainer and uploaders fields.
+  * Removing vcs fields.
+  * Removing references to my old email address.
+  * Makeing packaging distribution neutral.
+  * Improving comments in rules file.
+  * Simplyfing debhelper auto_install override in rules.
+  * Removing unneeded build-depends on autotools-dev.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Thu, 13 Jan 2011 22:58:57 +0100
+
+clzip (1.1~rc2-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Updating standards version to 3.9.0.
+  * Updating to standards version 3.9.1.
+  * Updating to debhelper version 8.
+  * Switching to source format 3.0 (quilt).
+  * Removing pre-squeeze depends to dpkg.
+  * Adding dpkg source options file.
+  * Removing README.source and headers in copyright file.
+  * Updating copyright file.
+  * Correcting name of debhelper docs file.
+  * Merging upstream version 1.1~rc2.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Mon, 27 Dec 2010 06:37:27 +0100
+
+clzip (1.0-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Merging upstream version 1.0.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Thu, 08 Apr 2010 12:05:16 +0200
+
+clzip (1.0~rc3-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Merging upstream version 1.0~rc3.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Mon, 15 Mar 2010 18:29:29 +0100
+
+clzip (1.0~rc2-1) sid; urgency=low
+
+  * Initial upload to sid.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 14 Mar 2010 13:02:04 +0100

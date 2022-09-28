@@ -1,0 +1,21 @@
+Author: Daniel Baumann <daniel.baumann@progress-linux.org>
+Description: Avoid overwriting build-environment.
+
+diff -Naurp clzip.orig/configure clzip/configure
+--- clzip.orig/configure
++++ clzip/configure
+@@ -20,10 +20,10 @@ bindir='$(exec_prefix)/bin'
+ datarootdir='$(prefix)/share'
+ infodir='$(datarootdir)/info'
+ mandir='$(datarootdir)/man'
+-CC=gcc
+-CPPFLAGS=
+-CFLAGS='-Wall -W -O2'
+-LDFLAGS=
++#CC=gcc
++#CPPFLAGS=
++#CFLAGS='-Wall -W -O2'
++#LDFLAGS=
+ 
+ # checking whether we are using GNU C.
+ /bin/sh -c "${CC} --version" > /dev/null 2>&1 || { CC=cc ; CFLAGS=-O2 ; }

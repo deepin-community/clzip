@@ -1,0 +1,26 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/buildtools.mk
+
+%:
+	dh ${@}
+
+override_dh_auto_configure:
+	dh_auto_configure -- 'CC=$(CC) -g'
+
+override_dh_auto_install:
+	dh_auto_install -- DESTDIR=$(CURDIR)/debian/clzip
+
+execute_after_dh_auto_install:
+	# update-alternatives
+	mv debian/clzip/usr/bin/clzip debian/clzip/usr/bin/lzip.clzip
+	ln -s /usr/bin/lzip.clzip debian/clzip/usr/bin/clzip
+
+	mv debian/clzip/usr/share/info/clzip.info debian/clzip/usr/share/info/lzip.clzip.info
+	ln -s /usr/share/info/lzip.clzip.info.gz debian/clzip/usr/share/info/clzip.info.gz
+
+	mv debian/clzip/usr/share/man/man1/clzip.1 debian/clzip/usr/share/man/man1/lzip.clzip.1
+	ln -s /usr/share/man/man1/lzip.clzip.1.gz debian/clzip/usr/share/man/man1/clzip.1.gz
+
+	# removing unused files
+	rm -f debian/clzip/usr/share/info/dir*
